@@ -26,7 +26,7 @@
         const normalized = normalizeSongIdForAwmc(songId);
         if (normalized == null) return null;
         const diff = getDxQueryDiffFromDisplaySetting();
-        const url = new URL('https://maimai-chart-priview.edgeone.dev/');
+        const url = new URL('https://mcp.fon1173.top/');
         url.searchParams.set('song', String(normalized));
         url.searchParams.set('kind', 'dx');
         url.searchParams.set('diff', String(diff));

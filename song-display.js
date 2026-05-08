@@ -49,7 +49,7 @@
     }
 
     function getDxQueryDiffFromLevel(levelKey) {
-        // maimai-chart-priview.edgeone.dev diff 对应：2 Basic、3 Advance、4 Expert、5 Master
+        // mcp.fon1173.top diff 对应：2 Basic、3 Advance、4 Expert、5 Master
         const map = {
             basic: 2,
             advanced: 3,
@@ -62,13 +62,13 @@
     function updateAwmcConfirmLinks() {
         if (typeof document === 'undefined') return;
         const diff = getDxQueryDiffFromLevel(getDifficultyLevel());
-        const anchors = document.querySelectorAll('a[href^="https://maimai-chart-priview.edgeone.dev/?song="], a[href*="maimai-chart-priview.edgeone.dev/?song="]');
+        const anchors = document.querySelectorAll('a[href^="https://mcp.fon1173.top/?song="], a[href*="mcp.fon1173.top/?song="]');
         anchors.forEach(a => {
             const href = a.getAttribute('href');
             if (!href) return;
             try {
                 const url = new URL(href);
-                if (url.hostname !== 'maimai-chart-priview.edgeone.dev') return;
+                if (url.hostname !== 'mcp.fon1173.top') return;
                 if (!url.searchParams.has('song')) return;
                 url.searchParams.set('diff', String(diff));
                 a.href = url.toString();
