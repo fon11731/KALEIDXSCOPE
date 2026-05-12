@@ -4,7 +4,7 @@
 
 ## 警告
 
-只供私人使用，如果想部署去原作者[![项目](https://github.com/Michaelwucoc/KALEIDXSCOPE)]
+只供私人使用，如果想部署去原作者[![项目](https://github.com/Michaelwucoc/KALEIDXSCOPE)]进行部署。
 
 ## 功能
 
