@@ -1,0 +1,13 @@
+{
+    "name": "kaleidoscope",
+    // 1. 设置为空字符串，跳过安装和构建步骤
+    "installCommand": "",
+    "buildCommand": "",
+    // 2. 指向你存放静态文件的文件夹
+    // 如果你的 index.html 就在项目根目录，填 "./"
+    // 如果你的文件在 public 文件夹，填 "./public"
+    "assets": {
+        "directory": "./",
+        "notFoundStrategy": "singlePageApplication"
+    }
+}
